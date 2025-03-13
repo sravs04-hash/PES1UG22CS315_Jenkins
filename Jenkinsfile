@@ -5,7 +5,8 @@ pipeline {
         // Build Stage: Compile hello.cpp
         stage('Build') {
             steps {
-                sh 'g++ main/hello.cpp -o main/hello_exec'
+                sh 'g++ main/invalid_file.cpp -o main/hello_exec'
+
             }
         }
 
